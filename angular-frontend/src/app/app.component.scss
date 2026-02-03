@@ -1,0 +1,35 @@
+nav {
+    background: linear-gradient(90deg, rgb(0, 247, 255), blue);
+    padding: 12px 30px;
+ 
+    ul {
+        list-style: none;
+        display: flex;
+        gap: 25px;
+        margin: 0;
+        padding: 0;
+        align-items: center;
+ 
+        li {
+            display: inline;
+        }
+       
+        a {
+            text-decoration: none;
+            font-weight: 500;
+            padding: 10px 10px;
+            border-radius: 10px;
+            transition: all 0.3s ease;
+ 
+            a:hover {
+                background-color: #000000;
+                color: white;
+ 
+                a.active {
+                    background: #000000;
+                    color: white;
+                }
+            }
+        }
+    }
+}
