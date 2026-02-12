@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>STI Enrollment Form</title>
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+        .container{
+            width: 500px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px gray;
+        }
+        h2{
+            text-align: center;
+        }
+        label{
+            display: block;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+        input[type="text"]{
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+        }
+        .radio-group{
+            margin-top: 10px;
+        }
+        .buttons{
+            margin-top: 20px;
+            text-align: center;
+        }
+        input[type="submit"], input[type="reset"]{
+            padding: 10px 20px;
+            margin: 5px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>STI Enrollment Form</h2>
+
+    <form>
+        
+        <label>Full Name:</label>
+        <input type="text" name="fullname" required>
+
+        <label>Address:</label>
+        <input type="text" name="address" required>
+
+        <label>Email:</label>
+        <input type="text" name="email" required>
+
+        <label>Contact Number:</label>
+        <input type="text" name="contact" required>
+
+        <label>Previous School:</label>
+        <input type="text" name="school" required>
+
+        <label>Gender:</label>
+        <div class="radio-group">
+            <input type="radio" name="gender" value="Male"> Male<br>
+            <input type="radio" name="gender" value="Female"> Female<br>
+            <input type="radio" name="gender" value="Prefer not to say"> Prefer not to say
+        </div>
+
+        <button type="submit">Submit Form</button>
+        <button type="reset">Reset Form</button>
+        
+    </form>
+</div>
+
+</body>
+</html>
